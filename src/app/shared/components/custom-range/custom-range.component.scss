@@ -1,0 +1,38 @@
+.range-container{
+  width: 100%;
+    .rangevalue{
+        font-weight: bold;
+        font-size: large;
+        padding: 6px 0px;
+    }
+    .label{
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+}
+
+
+input[type='range'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(178, 202, 247, 0.651);
+    padding: 0;
+    border-radius: 2px;
+    height: 5px;
+    width: 100%;
+    outline: none;
+  
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #663399;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    border: 6px solid white;
+    box-shadow: 0px 1px 1px #7a7a7a, 0px 1px 1px #9c9c9c;
+  }}
+  
+

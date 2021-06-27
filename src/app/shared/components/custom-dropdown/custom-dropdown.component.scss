@@ -1,0 +1,57 @@
+.dropdown {
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+  &-container {
+    display: flex;
+    font-size: 1rem;
+    color: #495057;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    transition: all 0.1s ease-out;
+    position: relative;
+  }
+
+  &-placeholder {
+    flex-grow: 1;
+    color: black;
+    font-weight: 500;
+  }
+
+  &-list {
+    z-index: 2;
+    font-weight: normal;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    position: absolute;
+    overflow-wrap: break-word;
+    width: 85%;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    max-height: 20rem;
+    overflow-y: auto;
+    &-option {
+      font-weight: normal;
+      display: block;
+      min-height: 1.2em;
+      color: #495057;
+      overflow-wrap: break-word;
+      padding: 0.1rem 1rem 0.1rem 1rem;
+      &:hover {
+        color: white;
+        background-color: #663399;
+      }
+    }
+  }
+  &-arrow {
+    background-color: white;
+    width: 12px;
+    padding-right: 3px;
+  }
+}

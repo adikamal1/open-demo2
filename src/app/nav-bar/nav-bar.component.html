@@ -1,0 +1,18 @@
+<nav class="nav-bar transparent" #navElem>
+    <a href="/#home">
+        <img class="logo" src="../../assets/images/logo.png" />
+    </a>
+    <section class="links">
+        <ul class="link-list">
+            <li class="link-item" *ngFor="let link of links">
+                <a [routerLink]="'.'" [fragment]="link" (click)="showLinks = false;">{{ link }}</a>
+            </li>
+        </ul>
+        <button class="tertiary login" (click)="login()">
+            Login
+        </button>
+        <button class="primary started" (click)="onStart()">
+            Get started
+        </button>
+    </section>
+</nav>

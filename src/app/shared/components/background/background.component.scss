@@ -1,0 +1,58 @@
+.bg {
+  &--container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &--top {
+    display: flex;
+    height: 100vh;
+    .bg {
+      &--small-circle {
+        position: relative;
+        top: 22%;
+        left: -6%;
+        width: 32%;
+        height: 50%;
+        opacity: 1;
+      }
+      &--dots {
+        position: relative;
+        top: 62%;
+        left: -5%;
+        width: 24%;
+        height: 28%;
+        z-index: 2;
+        opacity: 0.5;
+      }
+      &--big-circle {
+        position: relative;
+        top: -76%;
+        left: -4%;
+        width: 60%;
+        height: 200%;
+        opacity: 0.5;
+      }
+      &--dots2 {
+        top: 76%;
+        right: 32%;
+        width: 22%;
+        height: 28%;
+        z-index: 2;
+        opacity: 0.5;
+        position: relative;
+      }
+    }
+  }
+  &--bottom {
+    width: 100%;
+    margin-top: 14%;
+    .bg {
+      &--wave {
+        width: 100%;
+      }
+    }
+  }
+}

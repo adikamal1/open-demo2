@@ -1,0 +1,14 @@
+<div class="dropdown">
+    <span class="label"> {{label}}</span>
+    <div class="dropdown-container" #dropdown (click)="showList=!showList">
+        <div class="dropdown-placeholder">
+            {{selectedValue}}
+        </div>
+        <img class="dropdown-arrow" src="../../../../assets/icons/arrow-point-to-down.png">
+    </div>
+    <div class="dropdown-list" *ngIf='showList'>
+        <div class="dropdown-list-option" *ngFor="let item of options" (click)="onValueChange(item)">
+            {{item}}
+        </div>
+    </div>
+</div>

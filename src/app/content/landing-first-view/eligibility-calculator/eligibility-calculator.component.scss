@@ -1,0 +1,75 @@
+.eligibility-calculator-container {
+  position: relative;
+  left: 110px;
+  top: 140px;
+  .calculator-wrapper {
+    padding: 0px 22px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+    max-width: 324px;
+    position: relative;
+
+    .header {
+      text-align: center;
+      font-size: 20px;
+      background-color: rgba(183, 229, 255, 0.267);
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-group {
+      padding: 15px 10px;
+    }
+
+    .existing-loan-input {
+      padding: 15px 10px 40px 10px;
+      .form-label {
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 0.7;
+      }
+      input[type="text"] {
+        border: none;
+        border-bottom: 1px solid lightgrey;
+        width: 100%;
+        font-size: 20px;
+        color: black;
+        outline: none;
+        height: 30px;
+      }
+    }
+  }
+
+  .wrapper2 {
+    padding: 30px;
+    background: #663399;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+    max-width: 200px;
+    position: absolute;
+    top: 64px;
+    left: 378px;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .text {
+      opacity: 0.6;
+    }
+    .amount {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .get-money-btn {
+      font-size: 12px;
+      margin-top: 20px;
+      background: white;
+      font-weight: 600;
+    }
+  }
+}
